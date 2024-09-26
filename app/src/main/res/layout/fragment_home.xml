@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.HomeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/city_text_input_prompt" />
+
+    <EditText
+        android:id="@+id/city_input_text_view"
+        android:autofillHints="Enter city name"
+        android:layout_width="160dp"
+        android:layout_margin="8dp"
+        android:layout_height="48dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/search_button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:text="@string/search_button_text" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/error_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:textColor="@color/design_default_color_error"
+        android:text="@string/weather_not_found_message"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
